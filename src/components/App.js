@@ -1,4 +1,5 @@
 import First from './First'
+import Education from './Education'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
 
       <main>
         < First />
+        < Education />
       </main>
     </div>
   );

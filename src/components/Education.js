@@ -30,13 +30,13 @@ class Education extends Component {
 
   handleField(e) {
     this.setState({
-      institution: e.target.value
+      field: e.target.value
     })
   }
 
   handleYear(e) {
     this.setState({
-      institution: e.target.value
+      year: e.target.value
     })
   }
 
@@ -59,15 +59,18 @@ class Education extends Component {
     return (
       <div className="education">
         <form onSubmit={this.submitForm1} >
-          <label htmlFor="institution"></label>
+          <label htmlFor="institution">Institution Name</label>
           <input onChange={this.handleInstitution} type="text" name="institution" id="" />
-          <label htmlFor="Field"></label>
+          <label htmlFor="Field">Field Of Study</label>
           <input onChange={this.handleField} type="text" name="Field" id="" />
-          <label htmlFor="year"></label>
+          <label htmlFor="year">Year Of Completion</label>
           <input onChange={this.handleYear} type="text" name="" id="" />
           <input type="submit" value="Add Education" />
         </form>
+        < Specs list={ this.state.edu_details } />
       </div>
     )
   }
 }
+
+export default Education

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Specs = (props) => {
-  let list = this.props.list
+  let list = props.list
   
   return (
     <div>
